@@ -1,14 +1,15 @@
 <?php
-$names = array("Abraham","garry","tINA","UdeMy");
+$names = array("Abraham", "garry", "tINA", "UdeMy");
 
 $count = count($names);
-$chg = implode(" ",$names);
+$chg = implode(" ", $names);
 
-function fletter(&$nam){
+function fletter(&$nam)
+{
     $nam = ucwords(strtolower($nam));
     return $nam;
 }
 
-for($i = 0; $i <=$count;$i++){
-   echo " <br />". fletter($chg);
+for ($i = 0; $i <= $count; $i++) {
+    echo " <br />" . fletter($chg);
 }
